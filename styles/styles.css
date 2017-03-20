@@ -15,25 +15,84 @@ h1,h2,h3,h4 {
 }
 
 header {
-  margin-bottom: 4em;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: baseline;
 }
 
-header h1, header h2 {
+header h1, header h2, header h3 {
   margin: 0;
 }
 
 h1 {
-  font-size: 65px;
+  font-size: 85px;
+  text-shadow: #cc1c1c 4px -3px 0px, #cc0 7px -5px 0px
+}
+
+.subtitle {
+  margin-left: 20px;
 }
 
 h2 {
   font-size: 35px;
 }
 
+h3 {
+  font-size: 25px;
+}
+
 .dates {
-  margin-bottom: 4em;
+  margin-bottom: 50px;
 }
 
 .dates h2 {
   margin: 0;
+}
+
+.deets {
+  margin-bottom: 50px;
+}
+
+.faq-title {
+  margin-bottom: 2em;
+}
+
+.faq-title h2 {
+  margin-bottom: 0;
+}
+
+.faq li {
+  margin-bottom: 1em;
+}
+
+.faq li h3 {
+  margin: 0;
+}
+
+.faq li p {
+  margin: 0;
+}
+
+hr {
+  border-style: solid;
+  margin: 0;
+}
+
+@media (max-width: 966px) {
+  header {
+    display: block;
+  }
+
+  .subtitle {
+    margin: 0;
+  }
+
+  .dates h2 {
+    margin-bottom: 1em;
+  }
+
+  .dates { 
+    margin-bottom: 0;
+  }
+
 }
